@@ -3,11 +3,11 @@ import type { TextInputProps } from "../../types";
 // Create a TextInput component 
 // that handles user input and communicates changes to its parent.
 
-export const TextInput: React.FC<TextInputProps> = ({
+export const TextInput = ({
   onTextChange,
   placeholder = "Start typing...",
   initialValue = "",
-}) => {
+}: TextInputProps) => {
   return (
     <div className="w-full">
       <textarea
