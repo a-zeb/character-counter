@@ -42,7 +42,7 @@ function App() {
   return (
     <>
       <Container maxWidth="sm">
-        <Grid container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }}>
+        <Grid container spacing={2} columns={{ xs: 4, sm: 12 }}>
           <Grid size={12}>
             <h1>Typing Statistics</h1>
           </Grid>

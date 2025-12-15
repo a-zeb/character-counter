@@ -5,7 +5,7 @@ import { Grid } from "@mui/material";
 
 export const StatsDisplay: React.FC<StatsDisplayProps> = (props) => {
   return (
-    <Grid container spacing={2} columns={{ xs: 4, md: 12 }}>
+    <Grid container spacing={2} columns={{ xs: 4, sm: 12 }}>
       <Grid size={4}>
         <p>Character Count: {props.stats.characterCount}</p>
       </Grid>
