@@ -1,6 +1,7 @@
 import type { TextInputProps } from "../../types";
+import { TextField } from "@mui/material";
 
-// Create a TextInput component 
+// Create a TextInput component
 // that handles user input and communicates changes to its parent.
 
 export const TextInput = ({
@@ -9,14 +10,15 @@ export const TextInput = ({
   initialValue = "",
 }: TextInputProps) => {
   return (
-    <div className="w-full">
-      <textarea
-        className="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-        placeholder={placeholder}
-        defaultValue={initialValue}
-        onChange={(e) => onTextChange(e.target.value)}
-        rows={6}
-      />
-    </div>
+    <TextField
+      maxRows={15}
+      fullWidth
+      multiline={true}
+      aria-label="maximum height"
+      placeholder={placeholder}
+      defaultValue={initialValue}
+      minRows={6}
+      onChange={(e) => onTextChange(e.target.value)}
+    />
   );
 };
